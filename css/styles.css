@@ -1,0 +1,298 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --fs-accent: 0.675rem;
+  --fs-small: 0.875rem;
+  --fs-normal: 18px;
+  --fs-large: 1.25rem;
+  --fs-xlarge: 1.775rem;
+
+  --fw-500: 500;
+
+  --ls-card-details: 0.1em;
+  --ls-card: 0.15em;
+
+  --color-white: rgba(255, 255, 255, 0.92);
+  --color-primary: hsl(278, 68%, 11%);
+  --color-secondary: hsl(279, 6%, 55%);
+  --color-accent: hsl(270, 3%, 87%);
+
+  --gap: 40px;
+  --margin: 1.275rem 0 0.75rem 0;
+  --btn-radius: 9px;
+  --input-radius: 9px;
+  --rounded: 9px;
+}
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/*Form, labels & inputs*/
+label,
+input,
+button {
+  display: block;
+  width: 100%;
+}
+label,
+button {
+  margin: 1.275rem 0 0.575rem 0;
+}
+label {
+  text-transform: uppercase;
+  font-size: var(--fs-small);
+  letter-spacing: var(--ls-card-details);
+  color: var(--color-primary);
+}
+
+/*Form layout*/
+.col-6 input {
+  display: inline-block;
+  width: 40%;
+}
+.col-6:first-child input {
+  margin-right: 8px;
+}
+.col-6:last-child input {
+  width: 100%;
+}
+
+/*Layout*/
+.inner-container {
+  display: flex;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+.background {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .background {
+    flex: 1;
+  }
+  .form {
+    flex: 2;
+  }
+  .aligner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+  }
+  .aligner-item {
+    max-width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .form {
+    padding: 70px 25px 0 25px;
+  }
+}
+
+/*Background images*/
+.bg-desktop img,
+.bg-mobile img {
+  min-width: 100%;
+  max-height: 240px;
+}
+.bg-desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .bg-desktop img,
+  .bg-mobile img {
+    min-height: 100%;
+    max-height: 100%;
+  }
+  .bg-desktop {
+    display: block;
+    height: 100%;
+  }
+  .bg-mobile {
+    display: none;
+  }
+}
+
+/*Cards*/
+.card-front,
+.card-back {
+  position: absolute;
+  width: 447px;
+  height: 245px;
+  color: var(--color-white);
+  padding: 30px;
+  letter-spacing: var(--ls-card);
+}
+.card-back {
+  background-image: url(/images/bg-card-back.png);
+  top: 28%;
+  left: 35%;
+}
+.card-front {
+  background-image: url(/images/bg-card-front.png);
+  top: 50%;
+  left: 55%;
+}
+
+/*Card details*/
+.cc {
+  position: absolute;
+  display: block;
+  font-size: var(--fs-xlarge);
+  top: 50%;
+}
+.cc-name,
+.cc-exp {
+  position: absolute;
+  font-size: var(--fs-small);
+  top: 80%;
+}
+.cc-name {
+  left: 30px;
+  text-transform: uppercase;
+}
+.cc-exp {
+  right: 10%;
+}
+.cc-cvc {
+  position: absolute;
+  font-size: var(--fs-small);
+  top: 45%;
+  right: 14%;
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+  .card-front,
+  .card-back {
+    width: calc(447px / 1.55);
+    height: calc(245px / 1.55);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 25px;
+  }
+  .card-back {
+    top: 15%;
+    left: 22%;
+  }
+  .card-front {
+    top: 52%;
+    left: 5%;
+  }
+  .card-front svg {
+    transform: scale(0.675);
+    margin-top: -9px;
+    margin-left: -13px;
+  }
+  .cc {
+    font-size: var(--fs-normal);
+    top: 50%;
+  }
+  .cc-cvc {
+    font-size: var(--fs-accent);
+    top: 44%;
+    right: 14%;
+  }
+  .cc-name,
+  .cc-exp {
+    font-size: var(--fs-accent);
+    top: 76%;
+  }
+  .cc-name {
+    left: 25px;
+  }
+  .cc-exp {
+    right: 8%;
+  }
+}
+
+/* * * * * * * * *
+CSS Reset
+
+Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
