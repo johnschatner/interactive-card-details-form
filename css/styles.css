@@ -174,23 +174,25 @@ label {
   right: 14%;
 }
 
-/*Mobile*/
-@media (max-width: 768px) {
+/*  Breakpoints
+* * * * * * * * */
+/*Smaller desktop*/
+@media (max-width: 1375px) {
   .card-front,
   .card-back {
-    width: calc(447px / 1.55);
-    height: calc(245px / 1.55);
+    width: calc(447px / 1.15);
+    height: calc(245px / 1.15);
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 25px;
   }
   .card-back {
-    top: 15%;
-    left: 22%;
+    top: 30%;
+    left: 12%;
   }
   .card-front {
-    top: 52%;
-    left: 5%;
+    top: 50%;
+    left: 20%;
   }
   .card-front svg {
     transform: scale(0.675);
@@ -216,6 +218,36 @@ label {
   }
   .cc-exp {
     right: 8%;
+  }
+}
+/*Even smaller*/
+@media (max-width: 1000px) {
+  .card-front,
+  .card-back {
+    width: calc(447px / 1.55);
+    height: calc(245px / 1.55);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 25px;
+  }
+  .card-back {
+    top: 35%;
+    left: 2%;
+  }
+  .card-front {
+    top: 50%;
+    left: 5%;
+  }
+}
+/*Mobile*/
+@media (max-width: 768px) {
+  .card-back {
+    top: 15%;
+    left: 22%;
+  }
+  .card-front {
+    top: 52%;
+    left: 5%;
   }
 }
 
