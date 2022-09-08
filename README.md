@@ -40,8 +40,8 @@ Users should be able to:
   
 ### Links
 
-- Solution URL: [Add solution URL here](https://aesthetic-rugelach-7dd8b0.netlify.app/)
-- Live Site URL: [Add live site URL here](https://aesthetic-rugelach-7dd8b0.netlify.app/)
+- Solution URL: [View solution](https://aesthetic-rugelach-7dd8b0.netlify.app/)
+- Live Site URL: [View demo](https://aesthetic-rugelach-7dd8b0.netlify.app/)
 
 ## My process
 
