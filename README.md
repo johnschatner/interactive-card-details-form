@@ -35,6 +35,7 @@ Users should be able to:
 
 ![](./desktop-solution.png)
 ![](./mobile-solution.png)
+<img src="./mobile-solution.png" width="50%">
 
 ### Links
 
