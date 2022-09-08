@@ -33,9 +33,11 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./desktop-solution.png" width="50%">
-<img src="./mobile-solution.png">
-
+<p float="left">
+  <img src="./desktop-solution.png" width="50%">
+  <img src="./mobile-solution.png">
+</p>
+  
 ### Links
 
 - Solution URL: [Add solution URL here](https://aesthetic-rugelach-7dd8b0.netlify.app/)
