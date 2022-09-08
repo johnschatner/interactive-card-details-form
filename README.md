@@ -35,7 +35,7 @@ Users should be able to:
 
 <p float="left">
   <img src="./desktop-solution.png" width="70%">
-  <img src="./mobile-solution.png">
+  <img src="./mobile-solution.png" width="30%">
 </p>
   
 ### Links
