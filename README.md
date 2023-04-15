@@ -34,8 +34,8 @@ Users should be able to:
   
 ### Links
 
-- Solution URL: [View solution](https://aesthetic-rugelach-7dd8b0.netlify.app/)
-- Live Site URL: [View demo](https://aesthetic-rugelach-7dd8b0.netlify.app/)
+- Solution URL: [View solution](https://johnscardform.netlify.app/)
+- Live Site URL: [View demo](https://johnscardform.netlify.app/)
 
 ## My process
 
